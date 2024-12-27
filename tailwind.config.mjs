@@ -10,6 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accentGreen:"var(--accent-green)",
+        accentPurple:"var(--accent-purple)",
       },
     },
   },

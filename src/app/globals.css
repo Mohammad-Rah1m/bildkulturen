@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent-green: #A5C301;
+  --accent-purple: #AB1A67;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent-green: green;
+    --accent-purple: purple;
   }
 }
 
