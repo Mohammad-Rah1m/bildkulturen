@@ -17,7 +17,7 @@ const HeaderSub = () => {
       <div className="flex justify-between items-center">
         <div className="header-logo">
           <Link href="/">
-            <h1 className="text-5xl">LOGO</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl">LOGO</h1>
           </Link>
         </div>
         <div className="flex gap-5">
@@ -77,16 +77,16 @@ Folgen der sogenannten Kohlenstoff-Gesellschaft und"
           />
         </div>
       </div>
-      <div className="flex gap-10 justify-center mt-3">
+      <div className="flex gap-5 justify-center mt-3">
         <Link href={"/archivsuche"}>
-          <p className="text-2xl font-bold">Archivsuche</p>
+          <p className="text-md lg:text-2xl font-bold">Archivsuche</p>
         </Link>
         <Link href={"/projekt"}>
-          <p className="text-2xl font-bold">Projekt</p>
+          <p className="text-md lg:text-2xl font-bold">Projekt</p>
         </Link>
         <Link href={"/"}>
           <p
-            className="text-2xl font-bold"
+            className="text-md lg:text-2xl font-bold"
             onClick={() => handleClick(
               "Wie funktioniert diese Seite?", 
               "Dieses Informationssystem ist als Forschungsinstrument konzipiert. Das zugrundeliegende Material kann über unterschiedlich orientierte Zugänge erschlossen werden: Bei der Einfachen Suche kommen Technologien zum Einsatz, wie sie auch in Suchmaschinen verwendet werden. Nähere Angaben zu den Trunkierungsmöglichkeiten, zur Verwendung logischer Operatoren, zu Gruppierungen usw. enthält der Hilfetext zur Einfachen Suche. Die Erweiterte Suche bietet die Möglichkeit, verschiedene Felder miteinander zu kombinieren und so gezielt eigene Filter zu definieren. Weitere Informationen enthalten die Ausführungen zur Erweiterten Suche. Über die Thesaurussuche ist ein systematisch-hierarchischer Zugang zu den Materialien möglich. Derzeit sind folgende Thesauren verfügbar."
@@ -96,7 +96,7 @@ Folgen der sogenannten Kohlenstoff-Gesellschaft und"
           </p>
         </Link>
         <Link href={"/archivsuche"}>
-          <p className="text-2xl font-bold">Kontakt</p>
+          <p className="text-md lg:text-2xl font-bold">Kontakt</p>
         </Link>
       </div>
       <Popup />

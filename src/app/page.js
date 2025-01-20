@@ -15,7 +15,7 @@ export default function Home() {
       </div>
 
       <div className="px-5 lg:px-10 my-10 flex justify-center">
-        <div className="w-3/4">
+        <div className="lg:w-3/4">
           <h1 className="text-3xl font-bold">Röntgendiagramm</h1>
           {/* <h3 className="font-bold">Quelle</h3> */}
           {/* <div>

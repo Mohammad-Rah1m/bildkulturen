@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div className="px-5 lg:px-10 xl:px-32">
       <SmallPopup/>
-      <div className="flex gap-5 items-baseline justify-between w-3/4 border-b-2 border-black pb-3">
+      <div className="flex flex-wrap gap-5 items-baseline justify-between lg:w-3/4 border-b-2 border-black pb-3">
         <h3 className="text-3xl font-bold">Suchoptionen</h3>
         <p className="font-bold cursor-pointer" onClick={() => handleClick("asdasd")}>
           Einfach
@@ -23,8 +23,8 @@ const page = () => {
         <p className="font-bold cursor-pointer" onClick={() => handleClick("hahadha")}>Register</p>
         <p className="font-bold cursor-pointer" onClick={() => handleClick("bgfbfgb")}>Hilfe</p>
       </div>
-      <div className="flex gap-5 py-5">
-        <div className="w-3/4">
+      <div className="flex flex-wrap gap-5 py-5">
+        <div className="w-full lg:w-3/4">
           <p className="font-bold">Einfache Suche</p>
           <div className="relative w-full">
             <input
@@ -49,8 +49,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+      <div className="flex flex-wrap gap-5 py-2">
+        <div className="w-full lg:w-3/4">
           <p className="font-bold">Erweiterte Suche</p>
           <p>Schlusselbegriff</p>
           <div className="relative w-full">
@@ -71,7 +71,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Person</p>
           <div className="relative w-full">
             <input
@@ -85,7 +85,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Ort</p>
           <div className="relative w-full">
             <input
@@ -99,7 +99,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Technisches Medium</p>
           <div className="relative w-full">
             <input
@@ -113,7 +113,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Objekt</p>
           <div className="relative w-full">
             <input
@@ -127,7 +127,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Methodik</p>
           <div className="relative w-full">
             <input
@@ -141,7 +141,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Institution</p>
           <div className="relative w-full">
             <input
@@ -155,7 +155,7 @@ const page = () => {
       </div>
 
       <div className="flex gap-5 py-2">
-        <div className="w-3/4">
+        <div className="w-full lg:w-3/4">
           <p className="">Publikationsjahr</p>
           <div className="relative w-full">
             <input

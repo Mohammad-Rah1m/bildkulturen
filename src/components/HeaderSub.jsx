@@ -19,7 +19,7 @@ const HeaderSub = () => {
       </div>
       <div className="flex gap-10 justify-center">
         <Link href={"/archivsuche"}>
-          <p className="text-2xl font-bold">Archivsuche</p>
+          <p className="text-2xl lg:text-3xl font-bold">Archivsuche</p>
         </Link>
         <Link href={"/archivsuche"}>
           <p className="text-2xl font-bold">Projekt</p>
