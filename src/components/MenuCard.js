@@ -11,7 +11,7 @@ const MenuCard = ({imagePath,title,text}) => {
   };
 
   return (
-    <div className='bg-accentGreen p-2 rounded-lg hover:bg-accentPurple cursor-pointer transition-colors duration-500 ease-out w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]' onClick={handleClick}>
+    <div className='bg-accentGreen p-2 rounded-lg hover:bg-accentPurple cursor-pointer transition-colors duration-500 ease-out w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] flex justify-center items-center' onClick={handleClick}>
       <Image
       alt="Menu Cart Icon"
       src={imagePath}

@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isPopupOpen: false,
+  popupTitle:"",
   popupText: "",
 };
 
@@ -11,11 +12,13 @@ const smallPopupSlice = createSlice({
   reducers: {
     openPopup: (state, action) => {
       state.isPopupOpen = true;
-      state.popupText = action.payload; // Set popup content
+      state.popupTitle = action.payload.title;
+      state.popupText = action.payload.text; // Set popup content
     },
     closePopup: (state) => {
       state.isPopupOpen = false;
-      state.popupText = "";
+      state.popupTitle = "";
+      state.popupText = ""
     },
   },
 });

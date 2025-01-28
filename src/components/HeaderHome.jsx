@@ -5,11 +5,12 @@ import MenuCard from "@/components/MenuCard";
 import Popup from "@/components/Popup";
 import { useDispatch } from "react-redux";
 import { openPopup } from "@/store/features/popup/PopupSlice";
+import Image from "next/image";
 
 const HeaderSub = () => {
   const dispatch = useDispatch();
-  const handleClick = (title,text) => {
-    dispatch(openPopup({title,text})); // Trigger popup with text
+  const handleClick = (title, text) => {
+    dispatch(openPopup({ title, text })); // Trigger popup with text
   };
 
   return (
@@ -17,12 +18,18 @@ const HeaderSub = () => {
       <div className="flex justify-between items-center">
         <div className="header-logo">
           <Link href="/">
-            <h1 className="text-2xl md:text-3xl lg:text-5xl">LOGO</h1>
+            <Image
+              alt="Logo"
+              src="/images/Logo.svg"
+              // layout="responsive"
+              width={300}
+              height={20}
+            />
           </Link>
         </div>
         <div className="flex gap-5">
           <MenuCard
-            imagePath="/images/archive.svg"
+            imagePath="/images/welchesmedium.svg"
             title="Welches Medium"
             text="Die Vielfalt der visuellen Medien ist in der Ökologie
 als Wissenschaft sehr ausgeprägt, da die Disziplinierung
@@ -37,7 +44,7 @@ visuelle Signaturen, etwa die Tiefenordinate in der
 aquatischen Ökologie oder die Kombinatorik"
           />
           <MenuCard
-            imagePath="/images/archive.svg"
+            imagePath="/images/welchebildkultur.svg"
             title="Welche Bildkultur?
 "
             text="In der Ökologie als Wissenschaft sind Bilder
@@ -49,7 +56,7 @@ wissenschaftliche Zeichnungen, über Luftbild- und
 Mikrofotografie, bis zu diagrammatischen Techniken."
           />
           <MenuCard
-            imagePath="/images/archive.svg"
+            imagePath="/images/Vector1.svg"
             title="Welches Netz?"
             text="Das Netz steht hier sowohl für das
 informationstechnologische System, bestehend
@@ -61,7 +68,7 @@ und bibliographischen Daten ist ein zentrales
 Anliegen des Projektes."
           />
           <MenuCard
-            imagePath="/images/archive.svg"
+            imagePath="/images/Vector2.svg"
             title="Welche Ökologie?"
             text="Ökologie bezeichnet nicht nur eine
 naturwissenschaftliche Disziplin, sondern wird
@@ -87,10 +94,12 @@ Folgen der sogenannten Kohlenstoff-Gesellschaft und"
         <Link href={"/"}>
           <p
             className="text-md lg:text-2xl font-bold"
-            onClick={() => handleClick(
-              "Wie funktioniert diese Seite?", 
-              "Dieses Informationssystem ist als Forschungsinstrument konzipiert. Das zugrundeliegende Material kann über unterschiedlich orientierte Zugänge erschlossen werden: Bei der Einfachen Suche kommen Technologien zum Einsatz, wie sie auch in Suchmaschinen verwendet werden. Nähere Angaben zu den Trunkierungsmöglichkeiten, zur Verwendung logischer Operatoren, zu Gruppierungen usw. enthält der Hilfetext zur Einfachen Suche. Die Erweiterte Suche bietet die Möglichkeit, verschiedene Felder miteinander zu kombinieren und so gezielt eigene Filter zu definieren. Weitere Informationen enthalten die Ausführungen zur Erweiterten Suche. Über die Thesaurussuche ist ein systematisch-hierarchischer Zugang zu den Materialien möglich. Derzeit sind folgende Thesauren verfügbar."
-            )}
+            onClick={() =>
+              handleClick(
+                "Wie funktioniert diese Seite?",
+                "Dieses Informationssystem ist als Forschungsinstrument konzipiert. Das zugrundeliegende Material kann über unterschiedlich orientierte Zugänge erschlossen werden: Bei der Einfachen Suche kommen Technologien zum Einsatz, wie sie auch in Suchmaschinen verwendet werden. Nähere Angaben zu den Trunkierungsmöglichkeiten, zur Verwendung logischer Operatoren, zu Gruppierungen usw. enthält der Hilfetext zur Einfachen Suche. Die Erweiterte Suche bietet die Möglichkeit, verschiedene Felder miteinander zu kombinieren und so gezielt eigene Filter zu definieren. Weitere Informationen enthalten die Ausführungen zur Erweiterten Suche. Über die Thesaurussuche ist ein systematisch-hierarchischer Zugang zu den Materialien möglich. Derzeit sind folgende Thesauren verfügbar."
+              )
+            }
           >
             Hilfe
           </p>
